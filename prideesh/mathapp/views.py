@@ -11,9 +11,9 @@ def squareprism(request):
         print('request=',request)
         print('Base=',b)
         print('Height=',h)
-        area = int(b) * int(h)
+        area = 2*(int(b)^2) + 4*int(b)*int(h)
         context['area'] = area
         context['b'] = b
         context['h'] = h
-        print('Area=',area)
+        print('Surface Area of square prism=',area)
     return render(request,'mathapp/math.html',context)
